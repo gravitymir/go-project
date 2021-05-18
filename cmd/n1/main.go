@@ -1,13 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 func main() {
 
-	fmt.Printf("%e", run())
+	fmt.Printf("%v", run())
 }
 
 func run() error {
-	fmt.Println("func \"run\" is work!!!")
-	return nil
+	return errors.New("func \"run\" is work!!!\n")
 }
